@@ -74,6 +74,8 @@ public class PlayerMovement : MonoBehaviour
     public void DisableMovement(bool state)
     {
         _pause = state;
+        if (state)
+            _characterAnimation.ChangeVelocityParametr(0);
     }
 
     public void ResetPosition()
