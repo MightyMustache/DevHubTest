@@ -8,6 +8,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float _acceleration;
     [SerializeField] private float _deceleration;
     [SerializeField] private float _maxSpeed;
+    private CharacterAnimation _characterAnimation;
+    private CharacterRotation _characterRotation;
     private Vector3 _moveInput;
     private Vector3 _velocity;
     private bool _pause;
@@ -15,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     private float _manX = 20f;
     private float _minZ = -8.5f;
     private float _maxZ = 4.5f;
+
 
     public Vector3 StartPosition { get; private set; }
 
@@ -28,6 +31,8 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         StartPosition = transform.position;
+        _characterAnimation = GetComponent<CharacterAnimation>();
+        _characterRotation = GetComponent<CharacterRotation>();
     }
 
 
@@ -43,7 +48,10 @@ public class PlayerMovement : MonoBehaviour
             {
                 _velocity = Vector3.MoveTowards(_velocity, Vector3.zero, _deceleration * Time.deltaTime);
             }
-            transform.Translate(_velocity * Time.deltaTime);
+            transform.position += _velocity * Time.deltaTime;
+            _characterAnimation.ChangeVelocityParametr(Vector3.Magnitude(_velocity));
+            _characterRotation.RotateCharacterTowards(_velocity);
+
 
             Vector3 pos = transform.position;
             pos.x = Mathf.Clamp(pos.x, _minX, _manX);

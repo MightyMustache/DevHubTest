@@ -22,6 +22,7 @@ public class GameInstaller : MonoInstaller
 
 
 
+
     public override void InstallBindings()
     {
         Container.Bind<PauseManager>()
@@ -105,5 +106,6 @@ public class GameInstaller : MonoInstaller
         Container.Bind<GameObject>()
        .WithId("MidArea")
        .FromInstance(_midArea);
+
     }
 }
