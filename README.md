@@ -29,4 +29,5 @@ The project demonstrates:
 💾 Download Android build from release folder
 
 🎥 Gameplay video ⬇️ 
+
  [![Watch the video](https://t3.ftcdn.net/jpg/02/90/39/00/360_F_290390054_92MXhhVdHu46JuZnl3xK9e7w2jlv33O3.jpg)](https://www.youtube.com/watch?v=uAsnT4lPwuc)
