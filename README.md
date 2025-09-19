@@ -1,6 +1,6 @@
 # QuizGame3D
  
-This is a 3D quiz-style game built in Unity.
+📃This is a 3D quiz-style game built in Unity.
 
 At the center of the scene stands a main board that displays an image.
 On both left and right sides there are answer boards with possible answers.
@@ -27,5 +27,6 @@ The project demonstrates:
 * Cinemachine
 
 💾 Download Android build from release folder
- 
+
+🎥 Gameplay video ⬇️ 
  [![Watch the video](https://t3.ftcdn.net/jpg/02/90/39/00/360_F_290390054_92MXhhVdHu46JuZnl3xK9e7w2jlv33O3.jpg)](https://www.youtube.com/watch?v=uAsnT4lPwuc)
