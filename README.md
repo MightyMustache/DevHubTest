@@ -11,10 +11,21 @@ If the player makes a mistake, the game ends.
 
 The project demonstrates:
 
-- Interactive 3D gameplay in Unity
+* Interactive 3D gameplay in Unity
 
-- Timed events and user input
+* Timed events and user input
 
-- Simple quiz mechanics combined with spatial movement
+* Simple quiz mechanics combined with spatial movement
 
-- Simple AI for better look
+* Simple AI for better look
+
+⚙️Technologies
+
+* DOTween 
+* Zenject
+* InputSystem
+* Cinemachine
+
+💾 Download Android build from release folder
+ 
+ [![Watch the video](https://t3.ftcdn.net/jpg/02/90/39/00/360_F_290390054_92MXhhVdHu46JuZnl3xK9e7w2jlv33O3.jpg)](https://www.youtube.com/watch?v=uAsnT4lPwuc)

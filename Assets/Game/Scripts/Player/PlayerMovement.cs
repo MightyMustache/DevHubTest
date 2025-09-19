@@ -81,5 +81,6 @@ public class PlayerMovement : MonoBehaviour
     public void ResetPosition()
     {
         transform.position = StartPosition;
+        transform.rotation = Quaternion.identity;
     }
 }
